@@ -1,0 +1,127 @@
+<!-- /views/dashboard.ejs -->
+<!-- Main dashboard template using EJS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Taxi KPI Dashboard</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NYC Taxi Company KPIs</h1>
+      <p class="subtitle">Batch Data Pipeline - Spark Project Dashboard</p>
+    </header>
+
+    <section class="summary">
+      <h2>Summary</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <h3>Total Revenue</h3>
+          <p class="kpi-value">$<%= data.summary.totalRevenue.toLocaleString() %></p>
+        </div>
+        <div class="kpi-card">
+          <h3>Avg Trip Distance</h3>
+          <p class="kpi-value"><%= data.summary.avgTripDistance.toFixed(1) %> mi</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Pct Night Trips</h3>
+          <p class="kpi-value"><%= data.summary.pctNightTrips.toFixed(1) %>%</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Avg Fare</h3>
+          <p class="kpi-value">$<%= data.summary.avgFare %></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chart-section">
+      <h2>Weekly Trip Volume by Borough</h2>
+      <canvas id="weeklyChart"></canvas>
+    </section>
+
+    <section class="data-table">
+      <h2>Trip Volume Details</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Week Start</th>
+            <th>Borough</th>
+            <th>Trip Volume</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% data.weeklyByBorough.forEach(row => { %>
+          <tr>
+            <td><%= row.weekStart %></td>
+            <td><%= row.borough %></td>
+            <td><%= row.tripVolume.toLocaleString() %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script>
+    const weeklyData = <%- JSON.stringify(data.weeklyByBorough) %>;
+    
+    // Group data by borough
+    const boroughs = [...new Set(weeklyData.map(d => d.borough))];
+    const weeks = [...new Set(weeklyData.map(d => d.weekStart))].sort();
+    
+    const datasets = boroughs.map(borough => {
+      const data = weeks.map(week => {
+        const record = weeklyData.find(d => d.borough === borough && d.weekStart === week);
+        return record ? record.tripVolume : 0;
+      });
+      
+      return {
+        label: borough,
+        data: data,
+        borderWidth: 2,
+        fill: false
+      };
+    });
+
+    const ctx = document.getElementById('weeklyChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: weeks,
+        datasets: datasets
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Trip Volume'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Week Start'
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            position: 'top'
+          },
+          title: {
+            display: true,
+            text: 'Weekly Trip Volume by Borough'
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
