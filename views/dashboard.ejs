@@ -21,7 +21,7 @@
       <div class="kpi-grid">
         <div class="kpi-card">
           <h3>Total Revenue</h3>
-          <p class="kpi-value">$<%= data.summary.totalRevenue.toLocaleString() %></p>
+          <p class="kpi-value">$<%= data.summary.totalRevenue.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) %></p>
         </div>
         <div class="kpi-card">
           <h3>Avg Trip Distance</h3>
@@ -33,7 +33,7 @@
         </div>
         <div class="kpi-card">
           <h3>Avg Fare</h3>
-          <p class="kpi-value">$<%= data.summary.avgFare %></p>
+          <p class="kpi-value">$<%= data.summary.avgFare.toFixed(2) %></p>
         </div>
       </div>
     </section>
@@ -69,7 +69,6 @@
   <script>
     const weeklyData = <%- JSON.stringify(data.weeklyByBorough) %>;
     
-    // Group data by borough
     const boroughs = [...new Set(weeklyData.map(d => d.borough))];
     const weeks = [...new Set(weeklyData.map(d => d.weekStart))].sort();
     

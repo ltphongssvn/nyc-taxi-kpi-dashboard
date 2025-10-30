@@ -11,9 +11,6 @@ const __dirname = path.dirname(__filename)
 
 const DATA_DIR = path.join(__dirname, '../../data')
 
-/**
- * Reads Parquet file and returns data as array of objects
- */
 async function readParquetFile(filename) {
   const filePath = path.join(DATA_DIR, filename)
   
@@ -35,21 +32,20 @@ async function readParquetFile(filename) {
   }
 }
 
-/**
- * Main function to aggregate dashboard data from Gold layer
- */
 export async function getDashboardData() {
   try {
-    // Check if data directory exists
     const files = await fs.readdir(DATA_DIR)
-    const parquetFiles = files.filter(f => f.endsWith('.parquet'))
+    const goldFiles = files.filter(f => f.includes('gold') && f.endsWith('.parquet'))
     
-    if (parquetFiles.length === 0) {
+    if (goldFiles.length === 0) {
       return getMockData()
     }
     
-    // Read KPI data from Gold layer
-    const kpiData = await readParquetFile(parquetFiles[0])
+    const kpiData = await readParquetFile(goldFiles[0])
+    
+    if (kpiData.length === 0) {
+      return getMockData()
+    }
     
     return processKPIData(kpiData)
   } catch (error) {
@@ -58,48 +54,41 @@ export async function getDashboardData() {
   }
 }
 
-/**
- * Process raw KPI data into dashboard format
- */
 function processKPIData(records) {
-  // Aggregate metrics
-  const summary = {
-    totalRevenue: 0,
-    avgTripDistance: 0,
-    pctNightTrips: 0,
-    avgFare: 0,
-    totalTrips: records.length
-  }
+  let totalRevenue = 0
+  let totalDistance = 0
+  let totalNightTrips = 0
+  let totalTrips = 0
+  let totalFares = 0
   
-  const weeklyByBorough = {}
+  const weeklyByBorough = []
   
   records.forEach(record => {
-    if (record.total_revenue) summary.totalRevenue += record.total_revenue
-    if (record.trip_distance) summary.avgTripDistance += record.trip_distance
+    totalRevenue += Number(record.total_revenue) || 0
+    totalDistance += Number(record.trip_distance) || 0
+    totalNightTrips += Number(record.night_trips) || 0
+    totalTrips += Number(record.trip_count) || 0
+    totalFares += Number(record.fare_amount) || 0
     
-    // Group by week and borough
-    const key = `${record.week_start}-${record.borough}`
-    if (!weeklyByBorough[key]) {
-      weeklyByBorough[key] = {
-        weekStart: record.week_start,
-        borough: record.borough,
-        tripVolume: 0
-      }
-    }
-    weeklyByBorough[key].tripVolume += record.trip_count || 1
+    weeklyByBorough.push({
+      weekStart: record.week_start,
+      borough: record.borough,
+      tripVolume: Number(record.trip_count) || 0
+    })
   })
   
-  summary.avgTripDistance = summary.avgTripDistance / records.length
-  
   return {
-    summary,
-    weeklyByBorough: Object.values(weeklyByBorough)
+    summary: {
+      totalRevenue: totalRevenue,
+      avgTripDistance: totalTrips > 0 ? totalDistance / totalTrips : 0,
+      pctNightTrips: totalTrips > 0 ? (totalNightTrips / totalTrips) * 100 : 0,
+      avgFare: records.length > 0 ? totalFares / records.length : 0,
+      totalTrips: totalTrips
+    },
+    weeklyByBorough: weeklyByBorough
   }
 }
 
-/**
- * Returns mock data for development/testing
- */
 function getMockData() {
   return {
     summary: {

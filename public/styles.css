@@ -65,6 +65,10 @@ h2 {
   padding: 25px;
   border-radius: 8px;
   text-align: center;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .kpi-card h3 {
@@ -76,8 +80,11 @@ h2 {
 }
 
 .kpi-value {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.2;
 }
 
 .chart-section canvas {
@@ -112,5 +119,9 @@ tbody tr:hover {
   
   header h1 {
     font-size: 1.8rem;
+  }
+  
+  .kpi-value {
+    font-size: 1.3rem;
   }
 }
