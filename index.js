@@ -1,5 +1,5 @@
-// /index.js
-// Main application entry point - follows Factory and Dependency Injection patterns
+// /home/lenovo/code/ltphongssvn/node-js-design-patterns-fourth-edition/index.js
+// Main server file for NYC Taxi Company KPI Dashboard
 
 import express from 'express'
 import path from 'path'
@@ -12,23 +12,23 @@ const __dirname = path.dirname(__filename)
 const app = express()
 const PORT = process.env.PORT || 3000
 
-// Configure EJS template engine
+// View engine setup - FIXED: views are in ./views not ./src/views
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
-// Serve static files
+// Static files
 app.use(express.static(path.join(__dirname, 'public')))
-app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')))
 
 // Routes
 app.use('/', dashboardRoutes)
 
-// Error handling middleware (Middleware pattern)
+// Error handler
 app.use((err, req, res, next) => {
-  console.error(err.stack)
-  res.status(500).send('Something broke!')
+    console.error(err.stack)
+    res.status(500).send('Something broke!')
 })
 
+// Start server
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`)
+    console.log(`Server running on http://localhost:${PORT}`)
 })

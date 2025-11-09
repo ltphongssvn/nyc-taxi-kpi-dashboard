@@ -30,3 +30,16 @@ data/*.csv
 # Build outputs
 dist/
 build/
+
+# Backup files
+*.backup
+
+# Test files
+test-*.js
+test-*.html
+
+# Python scripts
+*.py
+
+# Old parquet files kept for reference
+data/*.parquet

@@ -1,0 +1,1039 @@
+{
+  "kpi1": [
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Bronx",
+      "trip_volume": 874
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "trip_volume": 3859
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "EWR",
+      "trip_volume": 120
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Manhattan",
+      "trip_volume": 350501
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "N/A",
+      "trip_volume": 302
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Queens",
+      "trip_volume": 45702
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Staten Island",
+      "trip_volume": 15
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Unknown",
+      "trip_volume": 1103
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Bronx",
+      "trip_volume": 1172
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "trip_volume": 5357
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "EWR",
+      "trip_volume": 60
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Manhattan",
+      "trip_volume": 575958
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "N/A",
+      "trip_volume": 246
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Queens",
+      "trip_volume": 57918
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Staten Island",
+      "trip_volume": 24
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Unknown",
+      "trip_volume": 1770
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Bronx",
+      "trip_volume": 1492
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "trip_volume": 5909
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "EWR",
+      "trip_volume": 72
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Manhattan",
+      "trip_volume": 613536
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "N/A",
+      "trip_volume": 288
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Queens",
+      "trip_volume": 54126
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Staten Island",
+      "trip_volume": 21
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Unknown",
+      "trip_volume": 1827
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Bronx",
+      "trip_volume": 1380
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "trip_volume": 5310
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "EWR",
+      "trip_volume": 69
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Manhattan",
+      "trip_volume": 591709
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "N/A",
+      "trip_volume": 254
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Queens",
+      "trip_volume": 56738
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Staten Island",
+      "trip_volume": 14
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Unknown",
+      "trip_volume": 1710
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Bronx",
+      "trip_volume": 1262
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "trip_volume": 4631
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "EWR",
+      "trip_volume": 32
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Manhattan",
+      "trip_volume": 439063
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "N/A",
+      "trip_volume": 168
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Queens",
+      "trip_volume": 38265
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Staten Island",
+      "trip_volume": 12
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Unknown",
+      "trip_volume": 1352
+    }
+  ],
+  "kpi2": [
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Bronx",
+      "peak_hour_trip_percentage": 13.157894736842104
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "peak_hour_trip_percentage": 15.755377040684115
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "EWR",
+      "peak_hour_trip_percentage": 17.5
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Manhattan",
+      "peak_hour_trip_percentage": 20.09152612974
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "N/A",
+      "peak_hour_trip_percentage": 17.549668874172184
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Queens",
+      "peak_hour_trip_percentage": 21.29666097763774
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Staten Island",
+      "peak_hour_trip_percentage": 13.333333333333334
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Unknown",
+      "peak_hour_trip_percentage": 22.12148685403445
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Bronx",
+      "peak_hour_trip_percentage": 16.467576791808874
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "peak_hour_trip_percentage": 17.304461452305397
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "EWR",
+      "peak_hour_trip_percentage": 15.0
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Manhattan",
+      "peak_hour_trip_percentage": 19.240118203063417
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "N/A",
+      "peak_hour_trip_percentage": 20.73170731707317
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Queens",
+      "peak_hour_trip_percentage": 21.653026692910668
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Staten Island",
+      "peak_hour_trip_percentage": 20.833333333333332
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Unknown",
+      "peak_hour_trip_percentage": 17.966101694915253
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Bronx",
+      "peak_hour_trip_percentage": 14.879356568364612
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "peak_hour_trip_percentage": 17.769504146217635
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "EWR",
+      "peak_hour_trip_percentage": 9.722222222222221
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Manhattan",
+      "peak_hour_trip_percentage": 19.50953163302561
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "N/A",
+      "peak_hour_trip_percentage": 22.22222222222222
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Queens",
+      "peak_hour_trip_percentage": 20.836566529948637
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Staten Island",
+      "peak_hour_trip_percentage": 23.80952380952381
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Unknown",
+      "peak_hour_trip_percentage": 17.78872468527641
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Bronx",
+      "peak_hour_trip_percentage": 17.681159420289855
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "peak_hour_trip_percentage": 17.41996233521657
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "EWR",
+      "peak_hour_trip_percentage": 10.144927536231885
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Manhattan",
+      "peak_hour_trip_percentage": 19.5312222731106
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "N/A",
+      "peak_hour_trip_percentage": 23.228346456692915
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Queens",
+      "peak_hour_trip_percentage": 21.18509640805104
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Staten Island",
+      "peak_hour_trip_percentage": 35.714285714285715
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Unknown",
+      "peak_hour_trip_percentage": 20.4093567251462
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Bronx",
+      "peak_hour_trip_percentage": 15.055467511885896
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "peak_hour_trip_percentage": 19.455841071042972
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "EWR",
+      "peak_hour_trip_percentage": 21.875
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Manhattan",
+      "peak_hour_trip_percentage": 19.042369773813782
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "N/A",
+      "peak_hour_trip_percentage": 29.166666666666668
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Queens",
+      "peak_hour_trip_percentage": 20.52267084803345
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Staten Island",
+      "peak_hour_trip_percentage": 75.0
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Unknown",
+      "peak_hour_trip_percentage": 18.78698224852071
+    }
+  ],
+  "kpi3": [
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Bronx",
+      "avg_minutes_per_mile": 4.233490840172452
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "avg_minutes_per_mile": 5.030988802054408
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "EWR",
+      "avg_minutes_per_mile": 2.4061736620031087
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Manhattan",
+      "avg_minutes_per_mile": 5.57841052340097
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "N/A",
+      "avg_minutes_per_mile": 2.154756067340492
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Queens",
+      "avg_minutes_per_mile": 2.430614401928998
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Staten Island",
+      "avg_minutes_per_mile": 2.2572680869951176
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Unknown",
+      "avg_minutes_per_mile": 4.060579106643287
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Bronx",
+      "avg_minutes_per_mile": 4.6283048842529615
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "avg_minutes_per_mile": 5.873898958794168
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "EWR",
+      "avg_minutes_per_mile": 1.7212213482195722
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Manhattan",
+      "avg_minutes_per_mile": 5.858663932595407
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "N/A",
+      "avg_minutes_per_mile": 4.331629484545933
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Queens",
+      "avg_minutes_per_mile": 2.577495791933925
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Staten Island",
+      "avg_minutes_per_mile": 2.4092664092664093
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Unknown",
+      "avg_minutes_per_mile": 4.372471873370408
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Bronx",
+      "avg_minutes_per_mile": 4.932917148350421
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "avg_minutes_per_mile": 6.028526077504763
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "EWR",
+      "avg_minutes_per_mile": 1.8489463601532563
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Manhattan",
+      "avg_minutes_per_mile": 5.847888199854265
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "N/A",
+      "avg_minutes_per_mile": 2.191325158358126
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Queens",
+      "avg_minutes_per_mile": 2.7677424376411937
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Staten Island",
+      "avg_minutes_per_mile": 2.2270506108202444
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Unknown",
+      "avg_minutes_per_mile": 4.633912748568183
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Bronx",
+      "avg_minutes_per_mile": 4.879685535177505
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "avg_minutes_per_mile": 5.8960422834866195
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "EWR",
+      "avg_minutes_per_mile": 2.030438990058943
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Manhattan",
+      "avg_minutes_per_mile": 5.996347966419387
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "N/A",
+      "avg_minutes_per_mile": 3.458052324265604
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Queens",
+      "avg_minutes_per_mile": 2.624334275733484
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Staten Island",
+      "avg_minutes_per_mile": 1.6998796031054095
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Unknown",
+      "avg_minutes_per_mile": 4.608422795492165
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Bronx",
+      "avg_minutes_per_mile": 5.2653918803734365
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "avg_minutes_per_mile": 6.258897792763538
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "EWR",
+      "avg_minutes_per_mile": 2.522486772486772
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Manhattan",
+      "avg_minutes_per_mile": 6.175685052490275
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "N/A",
+      "avg_minutes_per_mile": 3.0218082598533424
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Queens",
+      "avg_minutes_per_mile": 2.928592612956178
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Staten Island",
+      "avg_minutes_per_mile": 1.8016687396351574
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Unknown",
+      "avg_minutes_per_mile": 4.922027383221532
+    }
+  ],
+  "kpi4": [
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "total_trips": 402476,
+      "total_revenue": 11610861.19999909
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "total_trips": 642505,
+      "total_revenue": 17524009.629992858
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "total_trips": 677271,
+      "total_revenue": 18367324.29999553
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "total_trips": 657184,
+      "total_revenue": 17849261.7499957
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "total_trips": 484785,
+      "total_revenue": 13256386.389998194
+    }
+  ],
+  "kpi5": [
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Bronx",
+      "avg_revenue_per_mile": 4.261877160455637
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "avg_revenue_per_mile": 5.375906256648621
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "EWR",
+      "avg_revenue_per_mile": 30.232844770153225
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Manhattan",
+      "avg_revenue_per_mile": 9.509820059857999
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "N/A",
+      "avg_revenue_per_mile": 8.499968364942033
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Queens",
+      "avg_revenue_per_mile": 5.619192310701052
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Staten Island",
+      "avg_revenue_per_mile": 4.880825565912117
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Unknown",
+      "avg_revenue_per_mile": 7.66547820772109
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Bronx",
+      "avg_revenue_per_mile": 4.175335911384936
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "avg_revenue_per_mile": 5.410732961625538
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "EWR",
+      "avg_revenue_per_mile": 23.889875666074598
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Manhattan",
+      "avg_revenue_per_mile": 10.445767742778107
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "N/A",
+      "avg_revenue_per_mile": 7.745416328285485
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Queens",
+      "avg_revenue_per_mile": 5.705383482441428
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Staten Island",
+      "avg_revenue_per_mile": 4.4203861003861
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Unknown",
+      "avg_revenue_per_mile": 8.283958141255036
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Bronx",
+      "avg_revenue_per_mile": 4.250026273658781
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "avg_revenue_per_mile": 5.306142129906345
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "EWR",
+      "avg_revenue_per_mile": 13.934425287356323
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Manhattan",
+      "avg_revenue_per_mile": 10.349853331608518
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "N/A",
+      "avg_revenue_per_mile": 11.498062377183254
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Queens",
+      "avg_revenue_per_mile": 5.821628362048155
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Staten Island",
+      "avg_revenue_per_mile": 4.277696335078533
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Unknown",
+      "avg_revenue_per_mile": 8.704723929896973
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Bronx",
+      "avg_revenue_per_mile": 4.215938329304008
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "avg_revenue_per_mile": 5.2343637429203245
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "EWR",
+      "avg_revenue_per_mile": 31.111638954869363
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Manhattan",
+      "avg_revenue_per_mile": 10.505695672746176
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "N/A",
+      "avg_revenue_per_mile": 10.319343230887611
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Queens",
+      "avg_revenue_per_mile": 5.762408598629113
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Staten Island",
+      "avg_revenue_per_mile": 4.169012330302651
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Unknown",
+      "avg_revenue_per_mile": 8.37129021346293
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Bronx",
+      "avg_revenue_per_mile": 4.153999570563773
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "avg_revenue_per_mile": 5.103194082572527
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "EWR",
+      "avg_revenue_per_mile": 20.762301587301586
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Manhattan",
+      "avg_revenue_per_mile": 10.674664728670479
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "N/A",
+      "avg_revenue_per_mile": 8.634325438622891
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Queens",
+      "avg_revenue_per_mile": 5.900456133244444
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Staten Island",
+      "avg_revenue_per_mile": 3.815453980099502
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Unknown",
+      "avg_revenue_per_mile": 8.739651574245707
+    }
+  ],
+  "kpi6": [
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Bronx",
+      "night_trip_percentage": 51.48741418764302
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "night_trip_percentage": 37.65224151334542
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "EWR",
+      "night_trip_percentage": 13.333333333333334
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Manhattan",
+      "night_trip_percentage": 15.570283679647133
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "N/A",
+      "night_trip_percentage": 25.165562913907284
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Queens",
+      "night_trip_percentage": 16.587895496914797
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Staten Island",
+      "night_trip_percentage": 20.0
+    },
+    {
+      "week_start_date": "2024-12-30 00:00:00",
+      "pickup_borough": "Unknown",
+      "night_trip_percentage": 17.951042611060743
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Bronx",
+      "night_trip_percentage": 49.40273037542662
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "night_trip_percentage": 41.27310061601643
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "EWR",
+      "night_trip_percentage": 18.333333333333332
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Manhattan",
+      "night_trip_percentage": 18.84251976706635
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "N/A",
+      "night_trip_percentage": 21.951219512195124
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Queens",
+      "night_trip_percentage": 15.955316136606926
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Staten Island",
+      "night_trip_percentage": 20.833333333333332
+    },
+    {
+      "week_start_date": "2025-01-06 00:00:00",
+      "pickup_borough": "Unknown",
+      "night_trip_percentage": 20.7909604519774
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Bronx",
+      "night_trip_percentage": 50.53619302949062
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "night_trip_percentage": 39.8036892875275
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "EWR",
+      "night_trip_percentage": 13.88888888888889
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Manhattan",
+      "night_trip_percentage": 18.449447139206175
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "N/A",
+      "night_trip_percentage": 17.36111111111111
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Queens",
+      "night_trip_percentage": 17.688356797103054
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Staten Island",
+      "night_trip_percentage": 28.571428571428573
+    },
+    {
+      "week_start_date": "2025-01-13 00:00:00",
+      "pickup_borough": "Unknown",
+      "night_trip_percentage": 22.33169129720854
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Bronx",
+      "night_trip_percentage": 45.289855072463766
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "night_trip_percentage": 40.621468926553675
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "EWR",
+      "night_trip_percentage": 24.63768115942029
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Manhattan",
+      "night_trip_percentage": 17.94615258513898
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "N/A",
+      "night_trip_percentage": 20.866141732283463
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Queens",
+      "night_trip_percentage": 16.692516479255527
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Staten Island",
+      "night_trip_percentage": 7.142857142857143
+    },
+    {
+      "week_start_date": "2025-01-20 00:00:00",
+      "pickup_borough": "Unknown",
+      "night_trip_percentage": 18.830409356725145
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Bronx",
+      "night_trip_percentage": 53.80348652931854
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Brooklyn",
+      "night_trip_percentage": 42.62578276830058
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "EWR",
+      "night_trip_percentage": 21.875
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Manhattan",
+      "night_trip_percentage": 19.898511147602964
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "N/A",
+      "night_trip_percentage": 14.285714285714286
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Queens",
+      "night_trip_percentage": 17.64014112112897
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Staten Island",
+      "night_trip_percentage": 0.0
+    },
+    {
+      "week_start_date": "2025-01-27 00:00:00",
+      "pickup_borough": "Unknown",
+      "night_trip_percentage": 21.079881656804734
+    }
+  ]
+}

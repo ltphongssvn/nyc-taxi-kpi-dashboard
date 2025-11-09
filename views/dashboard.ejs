@@ -1,5 +1,4 @@
-<!-- /views/dashboard.ejs -->
-<!-- Main dashboard template using EJS -->
+<!-- /home/lenovo/code/ltphongssvn/node-js-design-patterns-fourth-edition/views/dashboard.ejs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NYC Taxi KPI Dashboard</title>
   <link rel="stylesheet" href="/styles.css">
-  <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -15,32 +14,54 @@
       <h1>NYC Taxi Company KPIs</h1>
       <p class="subtitle">Batch Data Pipeline - Spark Project Dashboard</p>
     </header>
-
+    
     <section class="summary">
-      <h2>Summary</h2>
+      <h2>City Planners KPIs</h2>
       <div class="kpi-grid">
         <div class="kpi-card">
+          <h3>Peak-Hour Trip %</h3>
+          <p class="kpi-value"><%= data.summary.peakHourTripPct?.toFixed(1) || '0.0' %>%</p>
+          <p class="kpi-desc">7-9 AM / 5-7 PM</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Avg Trip Time vs Distance</h3>
+          <p class="kpi-value"><%= data.summary.avgMinutesPerMile?.toFixed(1) || '0.0' %> min/mi</p>
+          <p class="kpi-desc">Minutes per mile</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary">
+      <h2>Fleet Operators KPIs</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <h3>Total Trips</h3>
+          <p class="kpi-value"><%= data.summary.totalTrips?.toLocaleString() || '0' %></p>
+          <p class="kpi-desc">All weeks</p>
+        </div>
+        <div class="kpi-card">
           <h3>Total Revenue</h3>
-          <p class="kpi-value">$<%= data.summary.totalRevenue.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) %></p>
+          <p class="kpi-value">$<%= data.summary.totalRevenue?.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) || '0.00' %></p>
+          <p class="kpi-desc">All weeks</p>
         </div>
         <div class="kpi-card">
-          <h3>Avg Trip Distance</h3>
-          <p class="kpi-value"><%= data.summary.avgTripDistance.toFixed(1) %> mi</p>
+          <h3>Avg Revenue per Mile</h3>
+          <p class="kpi-value">$<%= data.summary.avgRevenuePerMile?.toFixed(2) || '0.00' %></p>
+          <p class="kpi-desc">Per mile</p>
         </div>
         <div class="kpi-card">
-          <h3>Pct Night Trips</h3>
-          <p class="kpi-value"><%= data.summary.pctNightTrips.toFixed(1) %>%</p>
-        </div>
-        <div class="kpi-card">
-          <h3>Avg Fare</h3>
-          <p class="kpi-value">$<%= data.summary.avgFare.toFixed(2) %></p>
+          <h3>Night Trip %</h3>
+          <p class="kpi-value"><%= data.summary.nightTripPct?.toFixed(1) || '0.0' %>%</p>
+          <p class="kpi-desc">10 PM - 6 AM</p>
         </div>
       </div>
     </section>
 
     <section class="chart-section">
-      <h2>Weekly Trip Volume by Borough</h2>
-      <canvas id="weeklyChart"></canvas>
+      <h2>KPI 1: Weekly Trip Volume by Borough (City Planners)</h2>
+      <div style="position: relative; height: 400px;">
+        <canvas id="myChart"></canvas>
+      </div>
     </section>
 
     <section class="data-table">
@@ -67,26 +88,28 @@
   </div>
 
   <script>
-    const weeklyData = <%- JSON.stringify(data.weeklyByBorough) %>;
+    const ctx = document.getElementById('myChart');
+    const chartData = <%- JSON.stringify(data.weeklyByBorough) %>;
     
-    const boroughs = [...new Set(weeklyData.map(d => d.borough))];
-    const weeks = [...new Set(weeklyData.map(d => d.weekStart))].sort();
+    // Group data by week and borough
+    const weeks = [...new Set(chartData.map(d => d.weekStart))].sort();
+    const boroughs = [...new Set(chartData.map(d => d.borough))];
     
-    const datasets = boroughs.map(borough => {
-      const data = weeks.map(week => {
-        const record = weeklyData.find(d => d.borough === borough && d.weekStart === week);
-        return record ? record.tripVolume : 0;
-      });
-      
+    // Create datasets
+    const datasets = boroughs.map((borough, i) => {
+      const color = `hsl(${i * 45}, 70%, 50%)`;
       return {
         label: borough,
-        data: data,
-        borderWidth: 2,
-        fill: false
+        data: weeks.map(week => {
+          const item = chartData.find(d => d.borough === borough && d.weekStart === week);
+          return item ? item.tripVolume : 0;
+        }),
+        backgroundColor: color,
+        borderColor: color,
+        borderWidth: 1
       };
     });
-
-    const ctx = document.getElementById('weeklyChart').getContext('2d');
+    
     new Chart(ctx, {
       type: 'bar',
       data: {
@@ -95,28 +118,10 @@
       },
       options: {
         responsive: true,
+        maintainAspectRatio: false,
         scales: {
           y: {
-            beginAtZero: true,
-            title: {
-              display: true,
-              text: 'Trip Volume'
-            }
-          },
-          x: {
-            title: {
-              display: true,
-              text: 'Week Start'
-            }
-          }
-        },
-        plugins: {
-          legend: {
-            position: 'top'
-          },
-          title: {
-            display: true,
-            text: 'Weekly Trip Volume by Borough'
+            beginAtZero: true
           }
         }
       }
