@@ -43,3 +43,4 @@ test-*.html
 
 # Old parquet files kept for reference
 data/*.parquet
+.backups/
